@@ -592,3 +592,45 @@ a {
   font-weight: 700;
   color: #1a1a1a;
 }
+
+/* about-section-3*/
+.about-section-3-content{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  padding: 60px 0px;
+  gap: 40px;
+}
+.about-section-3-btn{
+  width: 100%;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.para-block h2{
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.para-text{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+.para-text p{
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  padding: 0px 20px;
+  border-left: #2979ff 4px solid;
+}
