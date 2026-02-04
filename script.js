@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     totalCards = cards.length;
 
-    // Clone cards at the beginning and end 
+    // Clone cards at the beginning and end
     cards.forEach((card) => {
       const cloneStart = card.cloneNode(true);
       const cloneEnd = card.cloneNode(true);
@@ -105,7 +105,6 @@ document.addEventListener("DOMContentLoaded", function () {
     updateCarousel(false);
   });
 
-
   let autoScroll = setInterval(() => {
     if (!isTransitioning) {
       currentPosition++;
@@ -136,3 +135,61 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const blocks = document.querySelectorAll(
+    ".about-block-1, .about-block-2, .about-block-3",
+  );
+
+  blocks.forEach((block) => {
+    const button = block.querySelector(".btn");
+
+    if (button) {
+      button.addEventListener("click", function (e) {
+        e.stopPropagation();
+
+        // Add ripple effect
+        const ripple = document.createElement("span");
+        ripple.classList.add("ripple-effect");
+
+        const rect = button.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        ripple.style.left = x + "px";
+        ripple.style.top = y + "px";
+
+        button.appendChild(ripple);
+
+        setTimeout(() => {
+          ripple.remove();
+        }, 600);
+
+        console.log(
+          "Learn More clicked for:",
+          block.querySelector("h3").textContent,
+        );
+      });
+    }
+  });
+
+  // Add animation on scroll
+  const observerOptions = {
+    threshold: 0.2,
+    rootMargin: "0px 0px -50px 0px",
+  };
+
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate-in");
+      }
+    });
+  }, observerOptions);
+
+  blocks.forEach((block) => {
+    block.classList.add("fade-up");
+    observer.observe(block);
+  });
+});

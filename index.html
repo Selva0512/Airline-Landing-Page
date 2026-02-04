@@ -92,231 +92,317 @@
       </section>
 
       <section id="destination" class="destinations-section">
-          <div class="destinations-header">
-            <div class="header-content">
-              <h1>Popular Destinations</h1>
-              <p>Unleash Your Wanderlust With Sky Wings.</p>
+        <div class="destinations-header">
+          <div class="header-content">
+            <h1>Popular Destinations</h1>
+            <p>Unleash Your Wanderlust With Sky Wings.</p>
+          </div>
+          <div class="navigation">
+            <button class="nav-btn" id="prevBtn">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+              </svg>
+            </button>
+            <button class="nav-btn" id="nextBtn">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel-container">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="destination-card">
+              <img
+                src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=600&h=400&fit=crop"
+                alt="Waterfall Wild Life"
+                class="card-image"
+              />
+              <div class="card-content">
+                <div class="card-info">
+                  <h3>Waterfall Wild Life</h3>
+                  <div class="card-location">
+                    <svg
+                      class="location-icon"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                      />
+                    </svg>
+                    <span>NRT, Switzerland</span>
+                  </div>
+                </div>
+                <div class="rating-badge">
+                  <svg class="star-icon" viewBox="0 0 24 24">
+                    <path
+                      d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                    />
+                  </svg>
+                  <span>4.6</span>
+                </div>
+              </div>
             </div>
-            <div class="navigation">
-              <button class="nav-btn" id="prevBtn">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
-                </svg>
-              </button>
-              <button class="nav-btn" id="nextBtn">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-                </svg>
-              </button>
+
+            <div class="destination-card">
+              <img
+                src="https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=600&h=400&fit=crop"
+                alt="Historical Place"
+                class="card-image"
+              />
+              <div class="card-content">
+                <div class="card-info">
+                  <h3>Historical Place</h3>
+                  <div class="card-location">
+                    <svg
+                      class="location-icon"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                      />
+                    </svg>
+                    <span>NRT, Turkey</span>
+                  </div>
+                </div>
+                <div class="rating-badge">
+                  <svg class="star-icon" viewBox="0 0 24 24">
+                    <path
+                      d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                    />
+                  </svg>
+                  <span>4.8</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="destination-card">
+              <img
+                src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=600&h=400&fit=crop"
+                alt="Mountains & River"
+                class="card-image"
+              />
+              <div class="card-content">
+                <div class="card-info">
+                  <h3>Mountains & River</h3>
+                  <div class="card-location">
+                    <svg
+                      class="location-icon"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                      />
+                    </svg>
+                    <span>NRT, Canada</span>
+                  </div>
+                </div>
+                <div class="rating-badge">
+                  <svg class="star-icon" viewBox="0 0 24 24">
+                    <path
+                      d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                    />
+                  </svg>
+                  <span>5.0</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="destination-card">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop"
+                alt="Beach Paradise"
+                class="card-image"
+              />
+              <div class="card-content">
+                <div class="card-info">
+                  <h3>Beach Paradise</h3>
+                  <div class="card-location">
+                    <svg
+                      class="location-icon"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                      />
+                    </svg>
+                    <span>NRT, Maldives</span>
+                  </div>
+                </div>
+                <div class="rating-badge">
+                  <svg class="star-icon" viewBox="0 0 24 24">
+                    <path
+                      d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                    />
+                  </svg>
+                  <span>4.9</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="destination-card">
+              <img
+                src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8?w=600&h=400&fit=crop"
+                alt="Desert Safari"
+                class="card-image"
+              />
+              <div class="card-content">
+                <div class="card-info">
+                  <h3>Desert Safari</h3>
+                  <div class="card-location">
+                    <svg
+                      class="location-icon"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                      />
+                    </svg>
+                    <span>NRT, Dubai</span>
+                  </div>
+                </div>
+                <div class="rating-badge">
+                  <svg class="star-icon" viewBox="0 0 24 24">
+                    <path
+                      d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                    />
+                  </svg>
+                  <span>4.7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="destination-card">
+              <img
+                src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&h=400&fit=crop"
+                alt="City Lights"
+                class="card-image"
+              />
+              <div class="card-content">
+                <div class="card-info">
+                  <h3>City Lights</h3>
+                  <div class="card-location">
+                    <svg
+                      class="location-icon"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                      />
+                    </svg>
+                    <span>NRT, Japan</span>
+                  </div>
+                </div>
+                <div class="rating-badge">
+                  <svg class="star-icon" viewBox="0 0 24 24">
+                    <path
+                      d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                    />
+                  </svg>
+                  <span>4.8</span>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="carousel-container">
-            <div class="carousel-track" id="carouselTrack">
-              <div class="destination-card">
-                <img
-                  src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=600&h=400&fit=crop"
-                  alt="Waterfall Wild Life"
-                  class="card-image"
-                />
-                <div class="card-content">
-                  <div class="card-info">
-                    <h3>Waterfall Wild Life</h3>
-                    <div class="card-location">
-                      <svg
-                        class="location-icon"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                        />
-                      </svg>
-                      <span>NRT, Switzerland</span>
-                    </div>
-                  </div>
-                  <div class="rating-badge">
-                    <svg class="star-icon" viewBox="0 0 24 24">
-                      <path
-                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-                      />
-                    </svg>
-                    <span>4.6</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="destination-card">
-                <img
-                  src="https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=600&h=400&fit=crop"
-                  alt="Historical Place"
-                  class="card-image"
-                />
-                <div class="card-content">
-                  <div class="card-info">
-                    <h3>Historical Place</h3>
-                    <div class="card-location">
-                      <svg
-                        class="location-icon"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                        />
-                      </svg>
-                      <span>NRT, Turkey</span>
-                    </div>
-                  </div>
-                  <div class="rating-badge">
-                    <svg class="star-icon" viewBox="0 0 24 24">
-                      <path
-                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-                      />
-                    </svg>
-                    <span>4.8</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="destination-card">
-                <img
-                  src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=600&h=400&fit=crop"
-                  alt="Mountains & River"
-                  class="card-image"
-                />
-                <div class="card-content">
-                  <div class="card-info">
-                    <h3>Mountains & River</h3>
-                    <div class="card-location">
-                      <svg
-                        class="location-icon"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                        />
-                      </svg>
-                      <span>NRT, Canada</span>
-                    </div>
-                  </div>
-                  <div class="rating-badge">
-                    <svg class="star-icon" viewBox="0 0 24 24">
-                      <path
-                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-                      />
-                    </svg>
-                    <span>5.0</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="destination-card">
-                <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop"
-                  alt="Beach Paradise"
-                  class="card-image"
-                />
-                <div class="card-content">
-                  <div class="card-info">
-                    <h3>Beach Paradise</h3>
-                    <div class="card-location">
-                      <svg
-                        class="location-icon"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                        />
-                      </svg>
-                      <span>NRT, Maldives</span>
-                    </div>
-                  </div>
-                  <div class="rating-badge">
-                    <svg class="star-icon" viewBox="0 0 24 24">
-                      <path
-                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-                      />
-                    </svg>
-                    <span>4.9</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="destination-card">
-                <img
-                  src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8?w=600&h=400&fit=crop"
-                  alt="Desert Safari"
-                  class="card-image"
-                />
-                <div class="card-content">
-                  <div class="card-info">
-                    <h3>Desert Safari</h3>
-                    <div class="card-location">
-                      <svg
-                        class="location-icon"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                        />
-                      </svg>
-                      <span>NRT, Dubai</span>
-                    </div>
-                  </div>
-                  <div class="rating-badge">
-                    <svg class="star-icon" viewBox="0 0 24 24">
-                      <path
-                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-                      />
-                    </svg>
-                    <span>4.7</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="destination-card">
-                <img
-                  src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&h=400&fit=crop"
-                  alt="City Lights"
-                  class="card-image"
-                />
-                <div class="card-content">
-                  <div class="card-info">
-                    <h3>City Lights</h3>
-                    <div class="card-location">
-                      <svg
-                        class="location-icon"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                        />
-                      </svg>
-                      <span>NRT, Japan</span>
-                    </div>
-                  </div>
-                  <div class="rating-badge">
-                    <svg class="star-icon" viewBox="0 0 24 24">
-                      <path
-                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-                      />
-                    </svg>
-                    <span>4.8</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
       </section>
 
-      <section id="About">
-        <h2>About Us</h2>
-        <p>We are dedicated to providing the best travel experiences.</p>
+      <section id="About" class="about-section">
+        <div class="about-content-1">
+          <h2>Journey To The Skies Made Simple!</h2>
+          <p>
+            traveling is a wonderful way explore new places. learn about<br />different
+            cultures and gain unique experiences.
+          </p>
+        </div>
+        <div class="about-content-2">
+          <div class="about-block-1">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/684/684908.png"
+              alt="Location Icon"
+              class="icon"
+            />
+            <h3>
+              Find your <br />
+              Destination
+            </h3>
+            <p>
+              traveling is a wonderful way <br />
+              to explore new places. learn <br />
+              about different cultures, an
+            </p>
+            <button class="btn">Learn More</button>
+          </div>
+          <div class="about-block-2">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/2666/2666505.png"
+              alt="Bookmark Icon"
+              class="icon"
+            />
+            <h3>
+              Book A <br />
+              Ticket
+            </h3>
+            <p>
+              traveling is a wonderful way <br />
+              to explore new places. learn <br />
+              about different cultures, an
+            </p>
+            <button class="btn">Learn More</button>
+          </div>
+          <div class="about-block-3">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/2232/2232688.png"
+              alt="Book Icon"
+              class="icon"
+            />
+            <h3>
+              Play & <br />
+              Explore
+            </h3>
+            <p>
+              traveling is a wonderful way <br />
+              to explore new places. learn <br />
+              about different cultures, an
+            </p>
+            <button class="btn">Learn More</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="Abour-2" class="about-section-2">
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&h=800&fit=crop"
+            alt="About Travel"
+            style="height: 500px; border-radius: 24px;"
+          />
+        </div>
+        <div class="about-text">
+          <div class="about-text-1">
+            <h2>TURN</h2>
+            <p>
+              from hidden gems to iconic escapes, we bring the world closer and
+              turn wanderlust into reality.
+            </p>
+          </div>
+          <div class="about-text-2">
+            <h2>WANDERLUST INTO</h2>
+          </div>
+          <div class="about-text-3">
+            <p>
+              discover breathtaking destinations and unforgettable experiences.
+            </p>
+            <h2>REALITY</h2>
+          </div>
+        </div>
       </section>
 
       <section id="Tour">

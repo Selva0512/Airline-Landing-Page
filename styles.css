@@ -102,6 +102,14 @@ footer {
   color: white;
   font-size: 0.9rem;
 }
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  margin: 0px 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
 
 /* logo*/
 .logo {
@@ -190,9 +198,7 @@ a {
   gap: 20px;
 }
 
-
 /* Destinations Section */
-
 
 .destinations-header {
   display: flex;
@@ -236,7 +242,7 @@ a {
 .carousel-track {
   display: flex;
   gap: 24px;
-  padding:12px 8px;
+  padding: 12px 8px;
   transition: transform 0.5s ease;
 }
 .destination-card {
@@ -326,3 +332,248 @@ a {
     font-size: 24px;
   }
 }
+
+/* About Section Styles */
+.about-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 40px 20px;
+}
+.about-content-1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about-content-1 h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+.about-content-1 p {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+.about-content-2 {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-block-1,
+.about-block-2,
+.about-block-3 {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 30px;
+  width: 320px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+/* Hover Effect - Elevate and Change Color */
+.about-block-1:hover,
+.about-block-2:hover,
+.about-block-3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+.about-block-1:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.about-block-2:hover {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+.about-block-3:hover {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+/* Change text color on hover */
+.about-block-1:hover h3,
+.about-block-2:hover h3,
+.about-block-3:hover h3,
+.about-block-1:hover p,
+.about-block-2:hover p,
+.about-block-3:hover p {
+  color: white;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+/* Heading Styles */
+.about-content-2 h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  line-height: 1.3;
+  transition: color 0.3s ease;
+}
+/* Paragraph Styles */
+.about-content-2 p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  transition: color 0.3s ease;
+}
+/* Button Styles */
+.btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  position: relative;
+  overflow: hidden;
+}
+/* Show button on hover */
+.about-block-1:hover .btn,
+.about-block-2:hover .btn,
+.about-block-3:hover .btn {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+/* Button hover effect */
+.btn:hover {
+  background: white;
+  color: #3b82f6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.about-block-1:hover .btn:hover {
+  color: #667eea;
+}
+
+.about-block-2:hover .btn:hover {
+  color: #f5576c;
+}
+
+.about-block-3:hover .btn:hover {
+  color: #00f2fe;
+}
+
+/* Ripple Effect */
+.ripple-effect {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  margin-top: -50px;
+  animation: ripple 0.6s ease-out;
+  pointer-events: none;
+}
+
+@keyframes ripple {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* Scroll Animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-up.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-content-2 {
+    gap: 25px;
+  }
+
+  .about-block-1,
+  .about-block-2,
+  .about-block-3 {
+    width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content-1 h2 {
+    font-size: 28px;
+  }
+
+  .about-content-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-block-1,
+  .about-block-2,
+  .about-block-3 {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+
+
+
+/*About section 2*/
+.about-section-2{
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-text-1,
+.about-text-3{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.about-text-1 h2,
+.about-text-3 h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+.about-text-1 p,
+.about-text-3 p {
+  font-size: 1.2rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+
+.about-text-2 h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
