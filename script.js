@@ -131,12 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
-
-
-
-
-
+// about-content-2
 document.addEventListener("DOMContentLoaded", function () {
   const blocks = document.querySelectorAll(
     ".about-block-1, .about-block-2, .about-block-3",
@@ -192,4 +187,19 @@ document.addEventListener("DOMContentLoaded", function () {
     block.classList.add("fade-up");
     observer.observe(block);
   });
+});
+
+// contact form
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  // Get form data
+  const formData = new FormData(this);
+  const data = Object.fromEntries(formData);
+
+  // Show success message (you can replace this with actual form submission)
+  alert("Thank you for your message! We will get back to you soon.");
+
+  // Reset form
+  this.reset();
 });
