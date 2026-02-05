@@ -12,7 +12,7 @@ Modern airplane travel agency landing page
 
 Custom hero section with curved design elements
 
-Responsive layout for different screen sizes
+Responsive layout for both laptop and Mobile screen sizes
 
 Interactive buttons and UI components
 
