@@ -70,7 +70,7 @@ section {
   width: 100%;
   max-width: 1200px;
   height: auto;
-  max-height: 600px;
+  max-height: fit-content;
   margin: 0px auto;
 }
 
@@ -127,7 +127,8 @@ a {
 .Home {
   width: 100%;
   background: url("./Assets/Plane.png") no-repeat center center;
-  height: 80vh;
+  height: 100%;
+  min-height: 80vh;
   display: flex;
   flex-direction: row;
   align-items: end;
@@ -357,7 +358,8 @@ a {
 .about-content-2 {
   display: flex;
   gap: 30px;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -366,7 +368,7 @@ a {
 .about-block-3 {
   background: white;
   border-radius: 16px;
-  padding: 40px 30px;
+  padding: 30px 20px;
   width: 320px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   text-align: center;
@@ -670,9 +672,12 @@ a {
 }
 
 .analysis-content-2{
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 40px;
+}
+.analysis-content-2-heading{
+  text-align: center;
 }
