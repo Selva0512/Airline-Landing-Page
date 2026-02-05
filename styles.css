@@ -127,6 +127,7 @@ a {
 .Home {
   width: 100%;
   background: url("./Assets/Plane.png") no-repeat center center;
+  background-size: cover;
   height: 100%;
   min-height: 80vh;
   display: flex;
@@ -142,6 +143,23 @@ a {
   flex-direction: column;
   padding-left: 10px;
   gap: 10px;
+}
+.left-home h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+.left-home h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.3;
+}
+.left-home p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
 }
 /* Bottom Right Curved Design */
 .explore-card {
@@ -549,7 +567,7 @@ a {
   align-items: center;
   gap: 40px;
 }
-.about-image-content{
+.about-image-content {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -596,7 +614,7 @@ a {
 }
 
 /* about-section-3*/
-.about-section-3-content{
+.about-section-3-content {
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -604,7 +622,7 @@ a {
   padding: 60px 0px;
   gap: 40px;
 }
-.about-section-3-btn{
+.about-section-3-btn {
   width: 100%;
   background: #3b82f6;
   color: white;
@@ -615,28 +633,27 @@ a {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.para-block h2{
+.para-block h2 {
   font-size: 1.8rem;
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 15px;
   text-align: center;
 }
-.para-text{
+.para-text {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   gap: 20px;
 }
-.para-text p{
+.para-text p {
   font-size: 1rem;
   line-height: 1.6;
   text-align: left;
   padding: 0px 20px;
   border-left: #2979ff 4px solid;
 }
-
 
 /* Analysis Section */
 .analysis-section {
@@ -648,7 +665,7 @@ a {
   gap: 50px;
   padding: 60px 0px;
 }
-.analysis-content{
+.analysis-content {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -667,17 +684,533 @@ a {
 .analysis-text:hover {
   background-color: #2979ff;
   color: white;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
   cursor: pointer;
 }
 
-.analysis-content-2{
+.analysis-content-2 {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
 }
-.analysis-content-2-heading{
+.analysis-content-2-heading {
   text-align: center;
+}
+
+/* ========================================
+   MOBILE RESPONSIVE MEDIA QUERIES
+   ======================================== */
+
+/* Tablet and Small Desktop - 768px to 1024px */
+@media (max-width: 1024px) {
+  header {
+    padding: 0rem 1rem;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  nav ul {
+    gap: 10px;
+    margin: 15px;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+  }
+
+  /* Home Section - Tablet */
+  .Home {
+    min-height: 70vh;
+    padding: 20px;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .left-home h1 {
+    font-size: 3rem;
+  }
+
+  .left-home h2 {
+    font-size: 2.2rem;
+  }
+
+  .left-home p {
+    font-size: 1rem;
+  }
+
+  .explore-text {
+    width: 320px;
+    padding: 20px;
+  }
+
+  .social-links {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .about-section-content {
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .about-text-1 h2,
+  .about-text-2 h2,
+  .about-text-3 h2 {
+    font-size: 4rem;
+  }
+
+  .about-text-1 p,
+  .about-text-3 p {
+    font-size: 1.1rem;
+  }
+
+  .about-section-3-content {
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .para-block h2 {
+    font-size: 1.6rem;
+  }
+
+  .analysis-content {
+    gap: 30px;
+  }
+
+  .analysis-text {
+    padding: 15px 40px;
+  }
+}
+
+/* Mobile Landscape and Small Tablets - 640px to 768px */
+@media (max-width: 768px) {
+  header {
+    padding: 0.5rem 1rem;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    height: 45px;
+  }
+
+  a {
+    font-size: 1.2rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px;
+  }
+
+  nav ul li a {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+
+  main {
+    padding: 20px 0px;
+  }
+
+  section {
+    padding: 0 15px;
+  }
+
+  /* Home Section - Mobile Landscape */
+  .Home {
+    min-height: 55vh;
+    padding: 18px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-home {
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-home h1 {
+    font-size: 2.5rem;
+  }
+
+  .left-home h2 {
+    font-size: 1.8rem;
+  }
+
+  .left-home p {
+    font-size: 0.95rem;
+  }
+
+  .explore-card {
+    justify-content: center;
+  }
+
+  .explore-text {
+    width: 100%;
+    max-width: 350px;
+    padding: 18px;
+  }
+
+  .avatars img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 2rem;
+  }
+
+  .siteImg {
+    max-width: 250px;
+    height: 200px;
+  }
+
+  /* About Section 2 - Mobile */
+  .about-section {
+    margin: 40px auto;
+    padding: 30px 15px;
+  }
+
+  .about-section-content {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .about-image-content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about-image-offer {
+    max-width: 100%;
+  }
+
+  .about-text-1,
+  .about-text-3 {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .about-text-1 h2,
+  .about-text-2 h2,
+  .about-text-3 h2 {
+    font-size: 3rem;
+  }
+
+  .about-text-1 p,
+  .about-text-3 p {
+    font-size: 1rem;
+  }
+
+  /* About Section 3 - Mobile */
+  .about-section-3-content {
+    flex-direction: column;
+    padding: 40px 15px;
+    gap: 25px;
+  }
+
+  .para-block h2 {
+    font-size: 1.4rem;
+  }
+
+  .para-text {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .para-text p {
+    font-size: 0.95rem;
+    padding: 0px 15px;
+  }
+
+  /* Analysis Section - Mobile */
+  .analysis-section {
+    gap: 30px;
+    padding: 40px 15px;
+  }
+
+  .analysis-content {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .analysis-text {
+    width: 100%;
+    padding: 15px 30px;
+  }
+}
+
+/* Mobile Portrait - Below 640px */
+@media (max-width: 640px) {
+  header {
+    padding: 0.5rem;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    gap: 5px;
+    margin: 8px;
+    justify-content: flex-start;
+  }
+
+  nav ul li a {
+    font-size: 0.75rem;
+    padding: 3px 6px;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+  /* Home Section - Mobile Portrait */
+  .Home {
+    min-height: 45vh;
+    padding: 15px;
+    border-radius: 24px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .left-home h1 {
+    font-size: 2rem;
+  }
+
+  .left-home h2 {
+    font-size: 1.5rem;
+  }
+
+  .left-home p {
+    font-size: 0.9rem;
+  }
+
+  .explore-text {
+    padding: 16px;
+  }
+
+  .explore-text strong {
+    font-size: 13px;
+  }
+
+  .explore-text p {
+    font-size: 11px;
+  }
+
+  .avatars img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin: 0px 8px;
+  }
+
+  footer {
+    padding: 1.5rem;
+  }
+
+  .siteImg {
+    max-width: 200px;
+    height: 170px;
+  }
+
+  .bottom-footer {
+    font-size: 0.8rem;
+  }
+
+  .about-content-1 h2 {
+    font-size: 24px;
+  }
+
+  .about-content-1 p {
+    font-size: 14px;
+  }
+
+  .about-text-1 h2,
+  .about-text-2 h2,
+  .about-text-3 h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-text-1 p,
+  .about-text-3 p {
+    font-size: 0.9rem;
+  }
+
+  .para-block h2 {
+    font-size: 1.2rem;
+  }
+
+  .para-text p {
+    font-size: 0.85rem;
+    padding: 0px 12px;
+    border-left-width: 3px;
+  }
+
+  .analysis-text {
+    padding: 12px 20px;
+  }
+
+  .analysis-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .analysis-text p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Mobile - Below 480px */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0.5rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Home Section - Extra Small Mobile */
+  .Home {
+    min-height: 40vh;
+    padding: 12px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .left-home h1 {
+    font-size: 1.6rem;
+  }
+
+  .left-home h2 {
+    font-size: 1.3rem;
+  }
+
+  .left-home p {
+    font-size: 0.85rem;
+  }
+
+  .explore-text {
+    width: 100%;
+    padding: 14px;
+    border-radius: 24px;
+  }
+
+  .explore-text strong {
+    font-size: 12px;
+  }
+
+  .explore-text p {
+    font-size: 10px;
+  }
+
+  .social-links {
+    padding: 10px;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .about-text-1 h2,
+  .about-text-2 h2,
+  .about-text-3 h2 {
+    font-size: 2rem;
+  }
+
+  .about-text-1 p,
+  .about-text-3 p {
+    font-size: 0.85rem;
+  }
+
+  .about-image-offer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .para-block h2 {
+    font-size: 1.1rem;
+  }
+
+  .para-text p {
+    font-size: 0.8rem;
+  }
+
+  .about-section-3-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .analysis-section {
+    padding: 30px 10px;
+  }
+}
+
+/* Handle hover states for touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .about-block-1,
+  .about-block-2,
+  .about-block-3 {
+    /* Show buttons by default on touch devices */
+  }
+
+  .about-btn {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+  }
+
+  .nav-btn:hover {
+    background: #e5e7eb;
+  }
+
+  .destination-card:hover {
+    transform: none;
+  }
 }
