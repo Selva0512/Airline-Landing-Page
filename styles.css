@@ -634,3 +634,45 @@ a {
   padding: 0px 20px;
   border-left: #2979ff 4px solid;
 }
+
+
+/* Analysis Section */
+.analysis-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 60px 0px;
+}
+.analysis-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.analysis-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 50px;
+  background-color: #d1d1d1;
+  border-radius: 12px;
+}
+.analysis-text:hover {
+  background-color: #2979ff;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.analysis-content-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
